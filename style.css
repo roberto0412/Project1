@@ -1,0 +1,197 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Author style starts here */
+
+/* extra resetting */
+img{
+	max-width: 100%;
+	height:auto;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+	
+	
+	html, body{
+	font-family: 'Raleway', arial, sans-serif;
+	font-weight: 500;
+		font-style: normal;
+	font-style: normal;
+	color: #2d2d2d;
+	line-height: 1.5rem;
+	}
+
+
+
+
+
+	h1,h2,h3{
+		font-size: 2.02rem;
+	}
+/* Page Container ---------------------------------*/	
+
+
+
+
+
+
+
+
+
+.container_1240{
+	margin: 0 auto ;
+	max-width: 1240px;
+	
+}
+
+
+/* header area ------------------------------------*/
+.site-header{
+	background-color:white;
+	padding-top: 15px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	
+}
+
+
+.logo img {
+	height: 60px;
+}
+
+
+.shop img{
+	height: 50px;
+	
+	
+
+}
+
+
+.navegation ul{
+	display: flex;
+	flex-basis: 50%;
+	justify-content: center;
+	padding-top: 15px;
+	
+}
+.navegation li{
+	padding: 10px;
+	margin: 0 10px;
+	color: red;
+	
+	
+	
+	 
+	 
+ }
+
+ .navegation a{
+	 text-decoration: none;
+	 color: black;
+
+ }
+
+ .ban{
+	background-image:url(girl.png), url(flower.jpg);
+	background-repeat: no-repeat, repeat;
+	background-position: center,center;
+    background-size: contain, contain;
+    background-position-y: 75px, 0;
+
+    
+    padding: 200px 0;
+ }
+ .select{
+	 text-align: center;
+
+ }
+
+h1, h2, h3 {
+	font-family: 'Playfair Display', serif;
+}
+
+ h3 {
+	 font-size: 2rem;
+	 font-style: italic;
+ }
+
+ h3 span {
+	 font-weight: bold;
+	 font-style: normal;
+
+
+ }
+
+ .info{
+	 margin-top: 5%;
+	 display: flex;
+	 margin-bottom: 7%;
+	 flex-direction: column;
+
+
+
+ }
+
+ .roberto {
+	 font-size: 40px;
+ }
+
+ .wrapper{
+	 max-width: 1240px;
+	 margin: 0 auto;
+	 text-align: center;
+ }
