@@ -15,7 +15,7 @@
 
 <body>
   <header class="site-header ">
-
+    <a href="#shop" class="screen-reader-text">Skip navigation</a>
     <div class="logo">
 
 
@@ -46,9 +46,9 @@
       <h1>Spring/Summer 2019</h1>
     </div>
   </section>
-  <section class="info" id="about">
+  <section class="info" id="about" tabindex="-1">
     <div class="wrapper">
-      <h3> Hand Crafted <span>styles</span> </h3>
+      <h2> Hand Crafted <span>styles</span> </h2>
 
       <p>
         Aloha Apparel Co. sells only the finest ready-to travel clothing.
@@ -165,6 +165,9 @@
         Unsubscribe at any time.
       </p>
       <form class="sign-up">
+          <label for="your-email">
+              your e-mail...
+          </label>
         <input type="email" name="your_email" id="your-email" value="" placeholder="Your Email">
         <input class="button" type="submit" name="subscribe" value="Subscribe">
       </form>
@@ -219,6 +222,7 @@
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.js"></script>
   <script src="flickity/flickity.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 
