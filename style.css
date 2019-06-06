@@ -1,527 +1,574 @@
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Author style starts here */
 
 /* extra resetting */
-img{
-	max-width: 100%;
-	height:auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
-	box-sizing: border-box;
-  }
-  *, *:before, *:after {
-	box-sizing: inherit;
-  }
-	
-	
-	html, body{
-	font-family: 'Raleway', arial, sans-serif;
-	font-weight: 500;
-		font-style: normal;
-	font-style: normal;
-	color: #2d2d2d;
-	line-height: 1.5rem;
-	}
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
+html,
+body {
+  font-family: "Raleway", arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-style: normal;
+  color: #2d2d2d;
+  line-height: 1.5rem;
+}
 
+h1,
+h2,
+h3 {
+  font-size: 2.02rem;
+}
+/* Page Container ---------------------------------*/
 
-
-
-	h1,h2,h3{
-		font-size: 2.02rem;
-	}
-/* Page Container ---------------------------------*/	
-
-
-
-
-
+/* ACCESIBILITY */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content */
+}
+#about[tabindex="-1"]:focus {
+  outline: 0;
+}
 
 /* start  here */
 
-
-
-
 /* header area ------------------------------------*/
-.site-header{
-	background-color:white;
-	padding-top: 15px;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	flex-direction: row;
-	flex-basis: 50%;
-	align-items: center;
-	width: 100%;
-	max-width: 100%;
-	
-	
+.site-header {
+  background-color: white;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 50%;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
 }
 
-
-.logo{
-	width: 120px;
-	height: auto; 
-	order: 1;
-
-
-	
+.logo {
+  width: 120px;
+  height: auto;
+  order: 1;
 }
 
-
-.shop{
-	height: 50px;
-	width: 50px;
-	order: 2;
-	margin-top: 25px;
-	
-	
+.shop {
+  height: 50px;
+  width: 50px;
+  order: 2;
+  margin-top: 25px;
 }
 
-
-.navegation{
-	text-align: center;
-	flex-basis: 100%;
-	display: flex;
-	order: 3;
-	justify-content:center; 
-	width: 90%;
-	border-top: 1px solid grey;
+.navegation {
+  text-align: center;
+  flex-basis: 100%;
+  display: flex;
+  order: 3;
+  justify-content: center;
+  width: 90%;
+  border-top: 1px solid grey;
 }
 
 .navegation ul {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-   
 .navegation li {
-	padding: 10px;
-	margin: 0 10px;	}
- 
-	.navegation a{
-	text-decoration: none;
-	
-	color: #e2574c
-
- }
-
- .ban{
-	background-image:url(girl.png), url(flower.jpg);
-	background-repeat: no-repeat, repeat;
-	background-position: center,center;
-    background-size: contain, contain;
-    background-position-y: 75px, 0;
-	padding: 200px 0; 
-	width: 100%;
- }
- .select{
-	 text-align: center;
-
- }
-
-h1, h2, h3{
-	font-family: 'Playfair Display', serif;
+  padding: 10px;
+  margin: 0 10px;
 }
 
- h3{
-	 font-size: 2rem;
-	 font-style: italic;
- }
+.navegation a {
+  text-decoration: none;
 
- h3 span {
-	 font-weight: bold;
-	 font-style: normal;
+  color: #e2574c;
+}
 
+.ban {
+  background-image: url(girl.png), url(flower.jpg);
+  background-repeat: no-repeat, repeat;
+  background-position: center, center;
+  background-size: contain, contain;
+  background-position-y: 75px, 0;
+  padding: 200px 0;
+  width: 100%;
+}
+.select {
+  text-align: center;
+}
 
- }
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
 
- .info{
-	 margin-top: 5%;
-	 display: flex;
-	 margin-bottom: 7%;
-	 flex-direction: column;
-	 width: 100%;
+h3 {
+  font-size: 2rem;
+  font-style: italic;
+}
 
+h3 span {
+  font-weight: bold;
+  font-style: normal;
+}
 
+.info {
+  margin-top: 5%;
+  display: flex;
+  margin-bottom: 7%;
+  flex-direction: column;
+  width: 100%;
+}
+.newsletter {
+  text-align: center;
+}
 
- }
- .newsletter{
-	 text-align: center;
- }
+.roberto {
+  font-size: 40px;
+}
 
- .roberto {
-	 font-size: 40px;
- }
+.wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  text-align: center;
+}
 
- .wrapper{
-	 max-width: 1240px;
-	 margin: 0 auto;
-	 text-align: center;
- }
+.selection {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
 
- .selection {
-	 display: flex;
-	 flex-wrap:wrap; 
-	 height: 100%;
-	 width: 100%;
- }
+.selection div {
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
 
- .selection div {
-	 background-position: center;
-	 background-size: cover;
-	 height: 300px;
-	 width: 100%;
- }
+.mens {
+  background-image: url(images/mens-category.jpg);
+  flex-basis: 100%;
+  justify-content: center;
+  border-bottom: 8px solid white;
+}
+.mens h4 {
+  text-align: center;
+  position: relative;
+  top: 40%;
+  color: white;
+}
 
+.trend {
+  background-image: url(images/trends-category.jpg);
+  flex-basis: 50%;
+  justify-content: center;
+  border-right: 8px solid white;
+}
+.trend h4 {
+  text-align: center;
+  position: relative;
+  top: 40%;
+  color: white;
+}
 
+.glass {
+  background-image: url(images/glasses-category.jpg);
+  flex-basis: 50%;
+  justify-content: center;
+}
 
+.glass h4 {
+  text-align: center;
+  position: relative;
+  top: 40%;
+  color: white;
+}
 
+.sale {
+  flex-basis: 50%;
+  background-image: url(images/sale-category.jpg);
+  border-top: 8px solid white;
+  border-right: 8px solid white;
+}
 
- .mens{
-	 background-image: url(images/mens-category.jpg);
-	 flex-basis: 100%;
-	 justify-content: center;
-	 border-bottom: 8px solid white;
-	
- }
- .mens h4{
-	 text-align: center;
-	 position: relative;
-	 top: 40%;
-	 color: white;
- }
+.sale h4 {
+  text-align: center;
+  position: relative;
+  top: 40%;
+  color: white;
+}
 
+.bags {
+  flex-basis: 50%;
+  background-image: url(images/bags-category.jpg);
+  border-top: 8px solid white;
+}
+.bags h4 {
+  text-align: center;
+  position: relative;
+  top: 40%;
+  text-decoration: none;
+  color: white;
+}
 
- .trend{
-	 background-image: url(images/trends-category.jpg);
-	 flex-basis: 50%;
-	 justify-content: center;
-	 border-right: 8px solid white;
+.womens {
+  flex-basis: 100%;
+  background-image: url(images/womens-category.jpg);
+  border-top: 8px solid white;
+}
+.womens h4 {
+  text-align: center;
+  position: relative;
+  top: 40%;
+  color: white;
+}
 
- }
- .trend h4{
-	 text-align: center;
-	 position: relative;
-	 top:40%;
-	 color: white;
- }
+.main-carousel {
+  width: 100%;
+  /* height:450px; */
+}
 
+.cell-carousel {
+  width: 360px;
+  text-align: center;
+}
 
- .glass{
-	 background-image: url(images/glasses-category.jpg);
-	 flex-basis: 50%;
-	 justify-content: center;
-	}
+.text-align {
+  margin-top: 15px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.product-t {
+  text-align: center;
+  width: 100%;
+}
 
-	.glass h4{ 
-		text-align: center;
-		position: relative;
-		top: 40%;
-		color: white;
-	}
+.newsletter {
+  background-image: url(images/wave-bkgd.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 320px;
+  margin-top: 40px;
+  width: 100%;
+}
 
-	
-	
-	
-	.sale{
-		flex-basis: 50%;
-		background-image: url(images/sale-category.jpg);
-		border-top: 8px solid white;
-		border-right: 8px solid white;
- }
+.newsletter h3 {
+  margin-top: 10px;
+}
+.newsletter p {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 11px;
+}
+.topflick {
+  margin-bottom: 15px;
+}
+.sign-up {
+  width: 360px;
+  margin: 0 auto;
+  position: relative;
+}
+#your-email {
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 100%;
+}
+.button {
+  background-color: #e2574c;
+  border-radius: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  padding: 10px 20px;
+}
+.site-footer {
+  background-color: #242424;
+  height: 300px;
+}
+.container-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-first {
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.container-second {
+  justify-content: flex-end;
+  text-align: center;
+  color: white;
+  flex-direction: row;
+}
+.container-footer a {
+  color: white;
+}
+.media-name {
+  font-size: 0;
+}
+.container-second a {
+  text-decoration: none;
+}
+.container-second ul {
+  display: flex;
+  padding-top: 50px;
+}
 
- .sale h4 {
-	 text-align: center;
-	 position: relative;
-	 top: 40%; 
-	color: white;
-
+@media only screen and (min-width: 600px) {
+  .site-header {
+    max-width: 1240px;
+    margin-top: none;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .ban {
+    width: 100%;
+  }
+  .shop {
+    border-bottom: 20px;
+  }
+  .navegation {
+    border-top: none;
+    position: relative;
+    bottom: 60px;
+  }
+  .selection {
+    flex-wrap: wrap;
+    margin: 0;
   }
 
+  .mens {
+    flex-basis: 50%;
+    display: flex;
+    border-bottom: 0;
+  }
+  .trend {
+    flex-basis: 25%;
+    display: flex;
+  }
+  .glass {
+    flex-basis: 25%;
+    display: flex;
+  }
 
- .bags{
-	 flex-basis: 50%;
-	 background-image: url(images/bags-category.jpg);
-	 border-top: 8px solid white;
-	 
- }
- .bags h4 {
-	 text-align: center;
-	 position: relative;
-	 top: 40%;
-	 text-decoration: none;
-	 color: white;
+  .sale {
+    flex-basis: 25%;
+    display: flex;
+  }
+  .bags {
+    flex-basis: 25%;
+    display: flex;
+    border-right: 8px solid white;
+  }
+  .womens {
+    flex-basis: 50%;
+    display: flex;
+  }
 
- }
-	 
- 
-
- .womens{
-	 flex-basis: 100%;
-	 background-image:url(images/womens-category.jpg);
-	 border-top: 8px solid white;
- }
- .womens h4 {
-	 text-align: center;
-	 position: relative;
-	 top:40%;
-	 color: white;
- }
-
-.main-carousel{
-	width:100%;
-	/* height:450px; */
-}
-
- .cell-carousel{
-	 width: 360px;
-	 text-align: center;
- }
-
-
- .text-align{
-	 margin-top: 15px;
-	 margin-bottom: 14px;
-	 text-align: center;
- }
-.product-t{
-	 text-align: center;
-	 width: 100%;
- }
-
- .newsletter{
-	 background-image: url(images/wave-bkgd.jpg);
-	 background-size:cover;
-	 background-repeat: no-repeat;
-	 background-position: center;
-	 height: 320px;
-	 margin-top: 40px;
-	 width: 100%;
-	 
-	}
-
-	.newsletter h3{
-		margin-top: 10px;
-	}
-	.newsletter p{
-		max-width: 700px;
-		margin: 0 auto;
-		margin-top: 11px;
-
- }
- .topflick{
-	 margin-bottom: 15px;
- }
- .sign-up{
-	 width: 360px;
-	 margin: 0 auto;
-	 position: relative;
- }
-#your-email{
-	padding: 10px 20px;
-	border-radius: 20px;
-	width: 100%;
-	
-}
- .button{
-	 background-color: #e2574c;
-	 border-radius: 50px;
-	 position: absolute;
-	 right:0;
-	 bottom: 1px;
-	 padding: 10px 20px;
-	 
-	 
- }
- .site-footer{
-	 background-color: #242424;
-	 height: 300px;
- }
- .container-footer{
-	 display: flex;
-	 align-items: center;
-	 flex-direction: column;
-	 justify-content: center;
- }
- .container-first{
-	 justify-content: flex-start;
-	 align-items: center;
-	 text-align: center;
-	 color: white;
- }
- .container-second{
-	 justify-content: flex-end;
-	 text-align: center;
-	 color: white;
-	 flex-direction: row;
- }
- .container-footer a{
-	 color: white;
- }
- .media-name{
-	 font-size: 0;
- }
- .container-second a {
-	 text-decoration: none;
- }
- .container-second ul{
-	 display: flex;
-	 padding-top: 50px;
- }
-
- 
- @media only screen and (min-width: 600px) {
-	.site-header {
-	  max-width:  1240px;
-		margin-top: none;
-		height: 80px;
-		margin-bottom: 20px;
-		
-	}
-	.ban{
-		width: 100%;
-	}
-	.shop{
-		border-bottom: 20px;
-	}
-	.navegation{
-		border-top: none;
-		position: relative;
-		bottom: 60px;
-
-	}
-	.selection{
-		flex-wrap: wrap;
-		margin: 0;
-	}
-
-  .mens{
-		flex-basis: 50%;
-	display: flex;
-	border-bottom: 0;
-	}
-	.trend{
-		flex-basis: 25%;
-		display: flex;
-	}
-	.glass{
-		flex-basis: 25%;
-		display: flex;
-	}
-
-	.sale{ flex-basis: 25%;
-		display: flex;
-
-	}
-	.bags{
-		flex-basis: 25%;
-		display: flex;
-		border-right: 8px solid white;
-	}
-	.womens{
-		flex-basis: 50%;
-		display: flex;
-	}
-
-
-  
-	/* .main-carousel.js-flickity div{
+  /* .main-carousel.js-flickity div{
 		width: 500px; 
 		
 	
 	
 	} */
-	.cell-carousel {
-		width: 50%;
-	}
-	.container-footer{
-		display: flex;
-		align-items: center;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-	.container-second ul{
-		display: unset;
-	}
-		
+  .cell-carousel {
+    width: 50%;
+  }
+  .container-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container-second ul {
+    display: unset;
+  }
 
-	.container-footer{
-		max-width: 1000px;
-	}
-	.media-name{
-		font-size: 15px;
-	}
-	.container-first p{
-		margin-top: 15px;
-	}
+  .container-footer {
+    max-width: 1000px;
+  }
+  .media-name {
+    font-size: 15px;
+  }
+  .container-first p {
+    margin-top: 15px;
+  }
 
-	.container-second li{
-		margin-top: 15px;
-	}
-		
-
+  .container-second li {
+    margin-top: 15px;
+  }
 }
-  @media only screen and (min-width: 1240px) {
-	.site-header {
-	  width: 60%;
-	  margin-top: 15px;
-	  position: relative;
-	  margin-left:25px;
-	  padding: 0 ;
-		left: 20%;
-	}
-	.cell-carousel{
-		width: 25%;
-	}
- }
+@media only screen and (min-width: 1240px) {
+  .site-header {
+    width: 60%;
+    margin-top: 15px;
+    position: relative;
+    margin-left: 25px;
+    padding: 0;
+    left: 20%;
+  }
+  .cell-carousel {
+    width: 25%;
+  }
+}
