@@ -174,8 +174,9 @@ html {
  }
  .hone{
 	 font-size: 20px;
-	 padding-bottom: 100px;
+	 padding-bottom: 70px;
 	 font-family: 'Raleway', sans-serif;
+	 text-shadow: 2px 2px 4px #242424;
 	
  }
  .htwo{
@@ -189,7 +190,8 @@ h1, h2, h3{
 }
 
  h3{
-	 font-size: 2rem;
+	 font-size: 46px;
+	 margin: 30px;
 	 font-style: italic;
  }
 
@@ -199,11 +201,17 @@ h1, h2, h3{
 
 
  }
+ .infoorma{
+	 padding-top: 50px;
+	 width: 500px;
+
+
+ }
 
  .info{
-	 margin-top: 5%;
+	 margin-top: 4%;
 	 display: flex;
-	 margin-bottom: 7%;
+	 margin-bottom: 3%;
 	 flex-direction: column;
 	 width: 100%;
 
@@ -355,7 +363,7 @@ h1, h2, h3{
  }
 
  .newsletter{
-	 background-image: url(images/wave-bkgd.jpg);
+	 background-image: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(images/wave-bkgd.jpg);
 	 background-size:auto;
 	 background-repeat: no-repeat;
 	 background-position: bottom;
@@ -366,12 +374,23 @@ h1, h2, h3{
 	}
 
 	.newsletter h3{
+	 font-size: 35px;
 		margin-top: 10px;
+		color: white;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-shadow: 2px 2px 4px #242424;
+		letter-spacing: 3px;
 	}
 	.newsletter p{
+		line-height: 2;
 		max-width: 700px;
 		margin: 0 auto;
+		color: white;
 		margin-top: 11px;
+		padding-bottom: 40px;
+		font-size: 18px;
+	   font-family:'Raleway';
 
  }
  .topflick{
@@ -436,6 +455,12 @@ h1, h2, h3{
 
  
  @media only screen and (min-width: 600px) {
+	 .container-first{
+		 margin-left: 100px;
+	 }
+	.container-second {
+		margin-right: 100px;
+	}
 	.site-header {
 	  max-width:  1240px;
 		margin-top: none;
@@ -459,6 +484,9 @@ h1, h2, h3{
 		flex-wrap: wrap;
 		margin: 0;
 	}
+	.hfour{
+		left: 50%;
+	}
 
   .mens{
 		flex-basis: 50%;
@@ -468,6 +496,7 @@ h1, h2, h3{
 	.trend{
 		flex-basis: 25%;
 		display: flex;
+		border-left: 8px solid white;
 	}
 	.glass{
 		flex-basis: 25%;
@@ -511,7 +540,7 @@ h1, h2, h3{
 		
 
 	.container-footer{
-		max-width: 1000px;
+		max-width: 100%;
 	}
 	.media-name{
 		font-size: 15px;
