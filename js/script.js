@@ -9,3 +9,20 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   });
+
+
+
+
+
+  document.querySelector("#subform").addEventListener("submit", subscribe);
+
+  function subscribe(event) {
+    event.preventDefault();
+    let email = document.querySelector("#your-email").value;
+
+    if (email === "") {
+      alert("Please submit a valid email address.");
+    } else {
+      alert("Thanks for subscribing.");
+    }
+  }
